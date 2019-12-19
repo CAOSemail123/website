@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Join Us</title>
+    <link rel="stylesheet" type="text/css" href="styles/page_style.css">
+    <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="scripts/interactive.js" type="text/javascript"></script>
+  </head>
+  <body>
+    
+    <div id="page-header">
+        <img id="logo" alt="CAOS logo" src="images/logo.png"/>
+        <h1 id="title">Cornell Association of Officiating Students</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li class="not-selected"><a href="index.html">Home</a></li>
+        <li class="not-selected"><a href="leadership.html">Leadership</a></li>
+        <li class="not-selected"><a href="schedule.html">Schedule</a></li>
+        <li class="selected collapsed"><a href="joinus.html"><img id="open-menu" src="images/menu.png" alt="open menu">Join Us<div class="selected-div"></div></a></li>
+        <li class="not-selected"><a href="hireus.html">Hire Officials</a></li>
+      </ul>
+    </nav>
+
+    <h2 id="page-heading">Join Us</h2>
+
+    <p class="joininfo">
+      Thank you for your interest in being a part of our organization. We accept any Cornell student that enjoys sports and is eager to learn. Please fill out the form below, and we'll let you know of your acceptance <strong> a week </strong>.
+    </p>
+
+    <div class="form">
+      <form action="https://www.cs.cornell.edu/courses/cs1300/2019fa/submit.php" id="joinUsForm" method="post" novalidate>
+
+        <div class="form-row">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required/>
+          <span class="error hidden" id="nameError">
+            * Please provide your name.
+          </span>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required/>
+          <span class="error hidden" id="emailError">
+            * Please provide a valid email.
+          </span>
+        </div>
+
+        <div class="form-row">
+          <label for="classYear">Graduation Year:</label>
+          <select id="classYear" name="classYear">
+            <option value="">Please specify the year.</option>
+            <option id="2020" value="2020">2020</option>
+            <option id="2021" value="2021">2021</option>
+            <option id="2022" value="2022">2022</option>
+            <option id="2023" value="2023">2023</option>
+            <option id="2024" value="2024">2024</option>
+          </select>
+          <span class="error hidden" id="classYearError">
+            * Please specify your year of graduation.
+          </span>
+        </div>
+
+        <div class="form-row">
+          <label for="hearAboutUs">How did you hear about us?</label>
+          <select id="hearAboutUs" name="hearAboutUs">
+            <option id="noResponse" value="">Please select an option.</option>
+            <option id="clubFest" value="clubFest">Club fest</option>
+            <option id="currentMember" value="currentMember">Current club member</option>
+            <option id="currentOfficer" value="currentOfficer">Current officer</option>
+            <option id="ads" value="ads">On campus ads</option>
+            <option id="other" value="other">Other</option>
+          </select>
+
+          <span class="error hidden" id="hearAboutUsError">
+            * Please select one of the options.
+          </span>
+        </div>
+
+        <div id="hearAboutUsDiv" class="form-row hidden">
+          <label for="hearAboutUsText" id="hearAboutUsTextLabel"></label>
+          <input type="text" id="hearAboutUsText" name="hearAboutUsText"/>
+          <span class="error hidden" id="hearAboutUsError2">
+            * Please specify.
+          </span>
+        </div>
+
+        <div class="form-row">
+          <label for="why">Why do you want to be a member?</label>
+          <textarea id="why" name="why" required></textarea>
+          <span class="error hidden" id="whyError">
+            * Please fill this out.
+          </span>
+        </div>
+
+        <div class="form-row">
+          <label for="what">What do you expect to gain/learn as a member?</label>
+          <textarea id="what" name="what" required></textarea>
+          <span class="error hidden" id="whatError">
+            * Please fill this out.
+          </span>
+        </div>
+
+        <div class="form-row">
+          <p> Which sports are you interested in officiating? </p>
+          <span class="error hidden" id="sportChoiceError">
+            * Please select atleast one sport.
+          </span>
+        </div>
+
+        <div class="form-row choices">
+          <label for="basketball">Basketball</label>
+          <input type="checkbox" id="basketball" name="basketball">
+        </div>
+
+        <div class="form-row choices">
+          <label for="flag_football">Flag Football</label>
+          <input type="checkbox" id="flag_football" name="flag football">
+        </div>
+
+        <div class="form-row choices">
+          <label for="volleyball">Volleyball</label>
+          <input type="checkbox" id="volleyball" name="volleyball">
+        </div>
+
+        <div class="form-row choices">
+          <label for="soccer">Soccer</label>
+          <input type="checkbox" id="soccer" name="soccer">
+        </div>
+
+        <div class="form-row submit">
+          <button id="submit" type="submit">Submit</button>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="submissionThankYou hidden">
+      <p> Thank you for your submission! </p>
+    </div>
+
+  </body>
+</html>
