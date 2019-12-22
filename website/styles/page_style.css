@@ -1,0 +1,638 @@
+/* Common for all pages */
+html {
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#page-header{
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  height: 200px;
+  background-image: url("../images/soccersky.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: thick solid black;
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  align-self: center;
+  border: initial;
+  padding-top:90px
+}
+
+#title {
+  display: inline-block;
+  align-self: center;
+  margin-left: 5px;
+  color: white;
+  padding-top:90px
+}
+
+#page-heading {
+  margin-top: 20px;
+  text-align: center;
+}
+
+img{
+  border: medium solid #9e1f00
+}
+
+/* navigation bar design */
+nav {
+  margin-bottom: 10px;
+  width: 100%;
+  border-bottom: thick solid black
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li{
+  display: inline-block;
+  width: 20.0%;
+  text-align: center;
+}
+
+nav a{
+  color: white;
+  display: block;
+  font-size: 20px;
+  text-decoration: none;
+  padding-top: 20px;
+  background-color: #9e1f00;
+  font-weight: normal;
+  border-bottom: medium solid #9e1f00;
+}
+
+nav .selected a{
+  font-weight: 700;
+  border-bottom: medium solid white;
+}
+
+nav .selected-div{
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid white;
+  margin: auto;
+  padding-top: 10px;
+}
+
+nav .not-selected a{
+  padding-bottom: 20px
+}
+
+nav a:hover {
+  font-weight: 700;
+  color: white;
+  border-bottom: medium solid white;
+}
+
+nav img{
+  display: none;
+}
+
+.fixed{
+  position: fixed;
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+nav .hidden{
+  display: none;
+}
+
+.invisible{
+  visibility: hidden
+}
+
+/*non-navigation link behavior*/
+a {
+  text-decoration: none;
+  color: #9e1f00;
+  font-weight: bold
+}
+
+a:hover{
+  color: #5b1403
+}
+
+/*side-by-side page template*/
+.side-by-side {
+  margin: 20px 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.side-by-side div{
+  padding: 10px 20px;
+  text-align: justify;
+}
+
+/*home page*/
+#about-us-info {
+  font-size: 18px;
+}
+
+.description{
+  display: block;
+  width: 350px;
+  border: medium solid black;
+  background-color: white;
+  text-align: center;
+}
+
+/*slideshow*/
+#slideshow {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+#left-button:hover, #right-button:hover {
+  cursor: pointer;
+  border-right-color: #5b1403;
+  border-left-color: #5b1403;
+}
+
+#left-button{
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 10px solid white;
+  border-bottom: 10px solid transparent;
+  padding: 0px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+#right-button{
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-left: 10px solid white;
+  border-bottom: 10px solid transparent;
+  padding: 0px;
+  margin-left: 5px;
+}
+
+/* leadership page */
+.officers-row{
+  display: flex;
+}
+
+/* Schedule page */
+.schedule_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 90%;
+}
+
+#meeting {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+#training {
+  color: #ffffff;
+  background-color: #9e1f00;
+}
+
+/* form design*/
+.form {
+  display: block;
+  width: 550px;
+  padding: 20px;
+  margin: 30px auto 60px auto;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+}
+
+.form-row {
+  width: 600px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.error {
+  color: #930c12;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+label {
+  width: 300px;
+  text-align: right;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+input, textarea, select {
+  width: 200px;
+  height: 15px;
+  margin-top: 20px;
+}
+
+#eventStartTimeLabel {
+  width: 20px;
+  text-align: center;
+}
+
+#eventStartTime, #eventEndTime {
+  width: 90px;
+}
+
+#submit {
+  margin: auto;
+  margin-top: 19px;
+  color: white;
+  padding: 5px;
+  background-color: #930c12
+}
+
+#submit:hover {
+  background-color: #5b1403;
+  cursor: pointer
+}
+
+/* joinus page */
+.joininfo {
+  text-align: center;
+  display: block;
+  width: 90%;
+  margin: 20px auto;
+}
+
+/* hireus page */
+.hireinfo {
+  text-align: center;
+  display: block;
+  margin: 20px auto;
+  width: 90%;
+}
+
+.eventsPast {
+  display: block;
+  width: 550px;
+  padding: 20px;
+  margin: 20px auto;
+  margin-bottom: 5%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  text-align: center;
+  background-color: white;
+}
+
+/* leadership page */
+
+img {
+  width: 450px;
+  height: 312px;
+}
+
+.officers {
+  text-align: center;
+  align-content: center;
+  margin-bottom: 60px;
+}
+
+.indiv1_pres, .indiv1_vice {
+  display: block;
+  margin-top: 2%;
+}
+
+.other_leaders {
+  display: block;
+  margin-top: 2%;
+}
+
+.leftindiv2, .midindiv2, .rightindiv2 {
+  display: inline-block;
+  margin-top: 2%;
+}
+
+.midindiv2 {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.position {
+  color: #3e3e3e;
+}
+
+.officers_image{
+  width: 200px;
+  height: 200px;
+}
+
+.eventsPast li{
+    list-style-type: none
+}
+
+/* Tablet Responsiveness */
+@media (min-width: 600px) and (max-width: 900px) {
+
+  .about-heading{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  #about {
+    width: 80%;
+    display:block;
+    margin: auto;
+  }
+
+  #slideshow{
+    display:block;
+  }
+
+  .side-by-side{
+    display: block;
+    margin-top: 0%;
+  }
+
+  .bottom_main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .description{
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    align-items: center;
+  }
+
+  nav li {
+    width: 24%;
+  }
+
+  .dropdown li {
+    width: 98%;
+  }
+
+  .membersNav a, .eventsNav a {
+    width: 100%;
+  }
+
+  .indiv1 {
+    display: inline-block;
+    margin-left: 36%;
+    align-items: center;
+  }
+
+  #slideshow img {
+    width: 70%;
+    height: 50%;
+  }
+
+  #decrement, #increment {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #decrement {
+    margin-left: 8%;
+  }
+
+  .midindiv2 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .about_img {
+    display: inline-block;
+    margin-left: 10%;
+    width: 80%;
+    height: 60%;
+  }
+
+  .rosterlist, .eventsPast{
+    width: 80%;
+  }
+
+  .leftindiv2, .midindiv2, .rightindiv2 {
+    display: block;
+  }
+
+  .hireinfo {
+    width: 90%;
+  }
+
+  figure .schedule_image {
+    width: 90%;
+    height: 90%;
+  }
+
+  #about {
+    width:90%;
+  }
+
+  .serv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about_img {
+    width: 60%;
+    height: 60%;
+    margin-left: 21%;
+    margin-bottom: 5%;
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+  }
+
+  nav ul {
+    display: block;
+  }
+
+  nav li {
+    width: 100%;
+  }
+
+  .side-by-side{
+    display: block;
+    margin-top:0%;
+    justify-content: center;
+  }
+
+  #about{
+    width: 80%;
+    margin: auto;
+  }
+
+  .about-heading {
+    margin-bottom: 2%;
+  }
+
+  .description{
+    margin-top: 5%;
+    width: 60%;
+    margin-left: 13%;
+  }
+
+  .hireinfo, .joininfo {
+    padding: 20px;
+  }
+
+  .schedule_info, .hireinfo, .joininfo, .eventsPast {
+    width: 90%;
+  }
+
+  .schedule_info {
+    margin: 20px auto;
+  }
+
+  .schedule_content {
+    display: inline-block;
+  }
+
+  /* homepage responsiveness */
+
+ img {
+    width: 70%;
+    height: 50%;
+  }
+
+  #decrement, #increment {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about_img {
+    display: inline-block;
+    margin-left: 5%;
+  }
+
+  /* form responsiveness*/
+  .form {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 0px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-row {
+    display: block;
+    width: 300px;
+  }
+
+  .form-row p {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .form-row label {
+    display: block;
+    margin: auto;
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .form-row input {
+    display: block;
+    margin: auto;
+    width: 300px;
+  }
+
+  .form-row select, textarea {
+    display: block;
+    width: 300px;
+    margin: auto;
+  }
+
+  .choices {
+    display: flex;
+    margin: auto;
+  }
+
+  .choices label {
+    width: 100px;
+    margin-right: 0px;
+  }
+
+  .choices input {
+    width: 20px;
+    margin-left: 0px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .submit {
+    display: flex;
+    margin-bottom: 4%;
+  }
+
+  /* Leadership responsiveness*/
+  .leftindiv2, .midindiv2, .rightindiv2 {
+    display: block;
+  }
+
+  .leadershipteam, .rosterlist h3{
+    font-size: 20px;
+  }
+
+  .rosterlist{
+    width: 60%;
+  }
+
+  /* Community Service mobile responsiveness */
+  .about_img {
+    margin-left: 14%;
+  }
+
+  /*mobile menu*/
+  nav img{
+    display: initial;
+    width: initial;
+    height: initial;
+    float: left;
+    padding-left: 20px
+  }
+
+  .hidden{
+    display: none;
+  }
+}
