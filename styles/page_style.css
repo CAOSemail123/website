@@ -194,6 +194,18 @@ a:hover{
 /* leadership page */
 .officers-row{
   display: flex;
+  justify-content: space-around;
+  padding: 50px
+}
+
+.officer{
+  text-align: center;
+}
+
+
+.officers-image{
+  width: 200px;
+  height: 200px;
 }
 
 /* Schedule page */
@@ -345,10 +357,6 @@ img {
   color: #3e3e3e;
 }
 
-.officers_image{
-  width: 200px;
-  height: 200px;
-}
 
 .eventsPast li{
     list-style-type: none
