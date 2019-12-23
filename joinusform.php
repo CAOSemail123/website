@@ -11,10 +11,10 @@ $sendFromEmail = "caosemail123@gmail.com";
 $sendFromPassword = "scottflickinger123";
 
 // Optionally change this to the desired subject line for emails
-$subject = "Form Submission for Your Website";
+$subject = "Joining CAOS inquiry";
 
 // Optionally change the name of the mailer
-$sendFromName = "Form Mailer";
+$sendFromName = "CAOS Website";
 
 // DO NOT CHANGE ANYTHING BELOW THIS LINE
 
