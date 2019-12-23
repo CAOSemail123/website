@@ -215,7 +215,7 @@ if($("#what").prop("validity").valid){
   submitForm=false;
 }
 
-if($("#basketball").is(':checked')||$("#football").is(':checked')||$("#volleyball").is(':checked')||$("#soccer").is(':checked')){
+if($("#basketball").is(':checked')||$("#flag_football").is(':checked')||$("#volleyball").is(':checked')||$("#soccer").is(':checked')){
   $("#sportChoiceError").addClass("hidden");
 } else {
   $("#sportChoiceError").removeClass("hidden");
