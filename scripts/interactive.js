@@ -136,7 +136,9 @@ $("#hireUsForm").on("submit", function(){
     submitForm=false;
   }
 
-  $("#thankyou1").removeClass("hidden");
+  if(submitForm){
+    $("#hireussubmission").removeClass("hidden");
+  }
 
   return submitForm;
 })
@@ -220,7 +222,9 @@ if($("#basketball").is(':checked')||$("#football").is(':checked')||$("#volleybal
   submitForm=false;
 }
 
-  $("#thankyou2").removeClass("hidden");
+if(submitForm){
+  $("#joinussubmission").removeClass("hidden");
+}
 
   return submitForm;
 })

@@ -243,10 +243,6 @@ iframe {
   text-align: center;
 }
 
-.hidden {
-  display: none;
-}
-
 label {
   width: 300px;
   text-align: right;
@@ -309,6 +305,17 @@ input, textarea, select {
   border-color: black;
   text-align: center;
   background-color: white;
+}
+
+#hireussubmission, #joinussubmission{
+  text-align: center;
+  display: block;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.hidden {
+  display: none !important;
 }
 
 /* leadership page */
