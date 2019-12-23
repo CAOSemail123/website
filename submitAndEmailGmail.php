@@ -2,7 +2,7 @@
 // Written for students of Cornell's INFO 1300 by Grant Storey, 11/7/18
 
 // Change this to your redirect page
-$redirect = "";
+$redirect = "index.html";
 // Change this to the email you want to send results to.
 $sendToEmail = "nr349@cornell.edu";
 // Change this to the email you want to send results from (must be an @gmail.com email ).
