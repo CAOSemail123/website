@@ -28,9 +28,11 @@
     <h2 id="page-heading">Hire Officials</h2>
 
     <p class="hireinfo">
-      Thank you for your interest in hiring our experienced referees for your games.
-      <br/>
-      Please submit your information below, and we will get back to you in <strong>1 to 2</strong> business days.
+      Thank you for your interest in hiring our experienced referees for your games. Please submit your information below!
+    </p>
+
+    <p id="thankyou1" class="joininfo hidden">
+      We received your submission. You can expect a response from us in <em>1-2</em> business days.
     </p>
 
     <br/>
@@ -40,7 +42,7 @@
 
       <div class="form-row">
         <label for="orgName">Name of your Organization:</label>
-        <input type="text" id="orgName" name="orgName" required/>
+        <input type="text" id="orgName" name="Organization Name" required/>
         <span class="error hidden" id="orgNameError">
           * Please provide the name of your organization.
         </span>
@@ -48,7 +50,7 @@
 
       <div class="form-row">
         <label for="contactName">Your Name:</label>
-        <input type="text" id="contactName" name="contactName" required/>
+        <input type="text" id="contactName" name="Name" required/>
         <span class="error hidden" id="contactNameError">
           * Please provide your name.
         </span>
@@ -56,7 +58,7 @@
 
       <div class="form-row">
         <label for="contactEmail">Your email address:</label>
-        <input type="email" id="contactEmail" name="contactEmail" required/>
+        <input type="email" id="contactEmail" name="Email" required/>
         <span class="error hidden" id="contactEmailError">
           * Please provide a valid email address.
         </span>
@@ -64,7 +66,7 @@
 
       <div class="form-row">
         <label for="contactPhoneNum">Your phone number:</label>
-        <input type="tel" id="contactPhoneNum" name="contactPhoneNum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}|[0-9]{3}[0-9]{3}[0-9]{4}"  placeholder="XXX-XXX-XXXX" required/>
+        <input type="tel" id="contactPhoneNum" name="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}|[0-9]{3}[0-9]{3}[0-9]{4}"  placeholder="XXX-XXX-XXXX" required/>
         <span class="error hidden" id="contactPhoneNumError">
           * Please provide a valid phone-number.
         </span>
@@ -72,7 +74,7 @@
 
       <div class="form-row">
         <label for="sportChoice">Which sport do you need officials for?</label>
-        <select id="sportChoice" name="sportChoice">
+        <select id="sportChoice" name="Sport Needed">
           <option value="">Please specify a sport.</option>
           <option id="basketball" value="basketball">Basketball</option>
           <option id="football" value="flag football">Flag Football</option>
@@ -86,7 +88,7 @@
 
       <div class="form-row">
         <label for="eventDate">Date of Event:</label>
-        <input type="date" id="eventDate" name="eventDate" required/>
+        <input type="date" id="eventDate" name="Date of Event" required/>
         <span class="error hidden" id="eventDateError">
           * Please specify the date of your event.
         </span>
@@ -97,10 +99,10 @@
 
       <div class="form-row">
         <label for="eventStartTime">Times of Event:</label>
-        <input type="time" id="eventStartTime" name="eventStartTime" required/>
+        <input type="time" id="eventStartTime" name="Event Start Time" required/>
 
         <label id="eventStartTimeLabel" for="eventEndTime">to</label>
-        <input type="time" id="eventEndTime" name="eventEndTime" required/>
+        <input type="time" id="eventEndTime" name="Event End Time" required/>
 
         <span class="error hidden" id="enterTimeError">
           * Please specify the times of your event.
@@ -113,7 +115,7 @@
 
       <div class="form-row">
         <label for="numOfficials"># of Officials Requested:</label>
-        <input type="number" id="numOfficials" name="numOfficials" required min="1"/>
+        <input type="number" id="numOfficials" name="Number of Officials" required min="1"/>
         <span class="error hidden" id="numOfficialsError">
           * Please specify the number of officials requested.
         </span>
@@ -121,12 +123,12 @@
 
       <div class="form-row">
         <label for="hourlyRate">Requested hourly rate:</label>
-        <input type="number" id="hourlyRate" name="hourlyRate"/>
+        <input type="number" id="hourlyRate" name="Suggested Hourly Rate"/>
       </div>
 
       <div class="form-row">
         <label for="anythingElse">Additional Info:</label>
-        <textarea id="anythingElse" name="anythingElse" placeholder="e.g. format, purpose of event, etc."></textarea>
+        <textarea id="anythingElse" name="Additional Info" placeholder="e.g. format, purpose of event, etc."></textarea>
       </div>
 
       <div class="form-row submit">

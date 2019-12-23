@@ -28,7 +28,11 @@
     <h2 id="page-heading">Join Us</h2>
 
     <p class="joininfo">
-      Thank you for your interest in being a part of our organization. We accept any Cornell student that enjoys sports and is eager to learn. Please fill out the form below, and we'll let you know of your acceptance <strong> a week </strong>.
+      Thank you for your interest in being a part of our organization. We accept any Cornell student that enjoys sports and is eager to learn. Please fill out the form below!
+    </p>
+
+    <p id="thankyou2" class="joininfo hidden">
+      We received your submission. You can expect a response from us in <em>1-2</em> business days.
     </p>
 
     <div class="form">
@@ -36,7 +40,7 @@
 
         <div class="form-row">
           <label for="name">Your Name:</label>
-          <input type="text" id="name" name="name" required/>
+          <input type="text" id="name" name="Student Name" required/>
           <span class="error hidden" id="nameError">
             * Please provide your name.
           </span>
@@ -44,7 +48,7 @@
 
         <div class="form-row">
           <label for="email">Your Email:</label>
-          <input type="email" id="email" name="email" required/>
+          <input type="email" id="email" name="Student Email" required/>
           <span class="error hidden" id="emailError">
             * Please provide a valid email.
           </span>
@@ -52,7 +56,7 @@
 
         <div class="form-row">
           <label for="classYear">Graduation Year:</label>
-          <select id="classYear" name="classYear">
+          <select id="classYear" name="Class Year">
             <option value="">Please specify the year.</option>
             <option id="2020" value="2020">2020</option>
             <option id="2021" value="2021">2021</option>
@@ -67,13 +71,13 @@
 
         <div class="form-row">
           <label for="hearAboutUs">How did you hear about us?</label>
-          <select id="hearAboutUs" name="hearAboutUs">
+          <select id="hearAboutUs" name="How did you hear about us?">
             <option id="noResponse" value="">Please select an option.</option>
-            <option id="clubFest" value="clubFest">Club fest</option>
-            <option id="currentMember" value="currentMember">Current club member</option>
-            <option id="currentOfficer" value="currentOfficer">Current officer</option>
-            <option id="ads" value="ads">On campus ads</option>
-            <option id="other" value="other">Other</option>
+            <option id="clubFest" value="Club Fest">Club fest</option>
+            <option id="currentMember" value="Current Member">Current club member</option>
+            <option id="currentOfficer" value="Current Officer">Current officer</option>
+            <option id="ads" value="Ads">On campus ads</option>
+            <option id="other" value="Other">Other</option>
           </select>
 
           <span class="error hidden" id="hearAboutUsError">
@@ -83,7 +87,7 @@
 
         <div id="hearAboutUsDiv" class="form-row hidden">
           <label for="hearAboutUsText" id="hearAboutUsTextLabel"></label>
-          <input type="text" id="hearAboutUsText" name="hearAboutUsText"/>
+          <input type="text" id="hearAboutUsText" name="How did you hear about us?"/>
           <span class="error hidden" id="hearAboutUsError2">
             * Please specify.
           </span>
@@ -91,7 +95,7 @@
 
         <div class="form-row">
           <label for="why">Why do you want to be a member?</label>
-          <textarea id="why" name="why" required></textarea>
+          <textarea id="why" name="Why do you want to be a member?" required></textarea>
           <span class="error hidden" id="whyError">
             * Please fill this out.
           </span>
@@ -99,7 +103,7 @@
 
         <div class="form-row">
           <label for="what">What do you expect to gain/learn as a member?</label>
-          <textarea id="what" name="what" required></textarea>
+          <textarea id="what" name="What do you expect to gain/learn as a member?" required></textarea>
           <span class="error hidden" id="whatError">
             * Please fill this out.
           </span>
@@ -115,7 +119,7 @@
         <div class="form-row choices">
           <label for="basketball">Basketball</label>
           <input type="checkbox" id="basketball" name="basketball">
-        </div>
+        </div>=
 
         <div class="form-row choices">
           <label for="flag_football">Flag Football</label>
