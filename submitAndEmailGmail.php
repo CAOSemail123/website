@@ -6,7 +6,7 @@ $redirect = "index.html";
 // Change this to the email you want to send results to.
 $sendToEmail = "nr349@cornell.edu";
 // Change this to the email you want to send results from (must be an @gmail.com email ).
-$sendFromEmail = "CAOSemail123@gmail.com";
+$sendFromEmail = "caosemail123@gmail.com";
 // The password for the email you are sending from
 $sendFromPassword = "scottflickinger123";
 
