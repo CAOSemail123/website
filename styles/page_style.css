@@ -76,7 +76,6 @@ nav a{
 }
 
 nav .selected a{
-  font-weight: 700;
   border-bottom: medium solid white;
 }
 
@@ -95,7 +94,6 @@ nav .not-selected a{
 }
 
 nav a:hover {
-  font-weight: 700;
   color: white;
   border-bottom: medium solid white;
 }
@@ -209,20 +207,13 @@ a:hover{
 }
 
 /* Schedule page */
-.schedule_image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  height: 90%;
+
+iframe {
+  width: 600px;
+  height: 500px;
 }
 
-#meeting {
-  color: #ffffff;
-  background-color: #000000;
-}
-
-#training {
+#noyes {
   color: #ffffff;
   background-color: #9e1f00;
 }
